@@ -2,7 +2,10 @@
   <div class="container my-5">
 
     <!-- Cabecero centrado -->
-    <app-cabecero></app-cabecero>
+    <app-cabecero [presupuestoTotal]="getPresupuestoTotal()"
+    [ingresoTotal]="getIngresoTotal()"
+    [egresoTotal]="getEgresoTotal()"
+    [porcentajeTotal]="getPorcentajeTotal()"></app-cabecero>
 
     <!-- Formulario centrado -->
     <app-formulario></app-formulario>
@@ -22,3 +25,4 @@
 
   </div>
 
+<router-outlet></router-outlet>
